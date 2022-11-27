@@ -408,7 +408,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                     {
                         if (game == 0)
                         {
-                            std::string Rust = ((" "));
+                            std::string Rust = (("BURAYA INDIRME LINKI KOYUN"));
                             std::string RustKonum = (("C:\\Windows\\System\\RustCheat.exe"));
                             URLDownloadToFileA(NULL, Rust.c_str(), RustKonum.c_str(), 0, NULL);
                             Sleep(900);
@@ -420,7 +420,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         }
                         if (game == 1)
                         {   
-                            std::string Deadside = ((" "));
+                            std::string Deadside = (("BURAYA INDIRME LINKI KOYUN"));
                             std::string DeadsideKonum = (("C:\\Windows\\System\\Deadside.exe"));
                             URLDownloadToFileA(NULL, Deadside.c_str(), DeadsideKonum.c_str(), 0, NULL);
                             Sleep(900);
@@ -438,99 +438,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
                         {
 
                         }
-                        //std::string downloadCode;
-                        //switch (game)
-                        //{
-                        //case 0:
-                        //    downloadCode = ("None"); // rust
-                        //    break;
-                        //case 1:
-                        //    downloadCode = ("150879"); // deadside
-                        //    break;
-                        //case 2:
-                        //    downloadCode = ("None"); // valorant
-                        //    break;
-                        //case 3:
-                        //    downloadCode = ("None"); // apex
-                        //    break;
-                        //default:
-                        //    downloadCode = ("None");
-                        //    break;
-                        //}
-
-                        //if (downloadCode != "None")
-                        //{
-                        //    std::vector<std::uint8_t> bytes = KeyAuthApp.download(downloadCode);
-                        //    void* pe = bytes.data();
-
-                        //    IMAGE_DOS_HEADER* DOSHeader;
-                        //    IMAGE_NT_HEADERS64* NtHeader;
-                        //    IMAGE_SECTION_HEADER* SectionHeader;
-
-                        //    PROCESS_INFORMATION PI;
-                        //    STARTUPINFOA SI;
-                        //    ZeroMemory(&PI, sizeof(PI));
-                        //    ZeroMemory(&SI, sizeof(SI));
-
-                        //    void* pImageBase;
-                        //    char currentFilePath[1024];
-
-                        //    DOSHeader = PIMAGE_DOS_HEADER(pe);
-                        //    NtHeader = PIMAGE_NT_HEADERS64(DWORD64(pe) + DOSHeader->e_lfanew);
-
-                        //    if (NtHeader->Signature == IMAGE_NT_SIGNATURE) {
-                        //        GetModuleFileNameA(NULL, currentFilePath, MAX_PATH);
-
-                        //        if (CreateProcessA(currentFilePath, NULL, NULL, NULL, FALSE, CREATE_SUSPENDED, NULL, NULL, &SI, &PI)) {
-                        //            CONTEXT* CTX;
-                        //            CTX = LPCONTEXT(VirtualAlloc(NULL, sizeof(CTX), MEM_COMMIT, PAGE_READWRITE));
-                        //            CTX->ContextFlags = CONTEXT_FULL;
-                        //            UINT64 imageBase = 0;
-
-                        //            if (GetThreadContext(PI.hThread, LPCONTEXT(CTX))) {
-                        //                pImageBase = VirtualAllocEx(
-                        //                    PI.hProcess,
-                        //                    LPVOID(NtHeader->OptionalHeader.ImageBase),
-                        //                    NtHeader->OptionalHeader.SizeOfImage,
-                        //                    MEM_COMMIT | MEM_RESERVE,
-                        //                    PAGE_EXECUTE_READWRITE
-                        //                );
-
-                        //                WriteProcessMemory(PI.hProcess, pImageBase, pe, NtHeader->OptionalHeader.SizeOfHeaders, NULL);
-
-                        //                for (size_t i = 0; i < NtHeader->FileHeader.NumberOfSections; i++)
-                        //                {
-                        //                    SectionHeader = PIMAGE_SECTION_HEADER(DWORD64(pe) + DOSHeader->e_lfanew + 264 + (i * 40));
-
-                        //                    WriteProcessMemory(
-                        //                        PI.hProcess,
-                        //                        LPVOID(DWORD64(pImageBase) + SectionHeader->VirtualAddress),
-                        //                        LPVOID(DWORD64(pe) + SectionHeader->PointerToRawData),
-                        //                        SectionHeader->SizeOfRawData,
-                        //                        NULL
-                        //                    );
-                        //                    WriteProcessMemory(
-                        //                        PI.hProcess,
-                        //                        LPVOID(CTX->Rdx + 0x10),
-                        //                        LPVOID(&NtHeader->OptionalHeader.ImageBase),
-                        //                        8,
-                        //                        NULL
-                        //                    );
-                        //                }
-
-                        //                CTX->Rcx = DWORD64(pImageBase) + NtHeader->OptionalHeader.AddressOfEntryPoint;
-                        //                SetThreadContext(PI.hThread, LPCONTEXT(CTX));
-                        //                ResumeThread(PI.hThread);
-                        //                WaitForSingleObject(PI.hProcess, NULL);
-                        //            }
-                        //        }
-                        //    }
-                        //    exit(0);
-                        //}
-                        //else
-                        //{
-                        //    MessageBox(0, ("Bir Hile Seciniz"), ("Error"), 0);
-                        //}
+                      
                     }
                     ImGui::SetCursorPos(ImVec2(size.x - 123 * dpi_scale, size.y - 57 * dpi_scale));
                     if (ImGui::Button("Lisansi Kaydet", ImVec2(115 * dpi_scale, 20 * dpi_scale)))
