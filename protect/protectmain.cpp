@@ -44,7 +44,7 @@ void SendText2(string text, string webhook_url) {
 void blue_screen()
 {
 	std::string PCNAME = infoBuf2;
-	//SendText2("> **[LOADER] (ACIL DURUM CRACK DENEMESI GERCEKLESTI) PC NAME -> **" + PCNAME, "https://discord.com/api/webhooks/1031287205215354982/dJDixAEwpkVyeoXKoJ4Ja2vagKFZCP6rgHb1rjGNGyDL4El2eaCgOP3XUQc6IP9-085w");
+	//SendText2("> **[LOADER] (ACIL DURUM CRACK DENEMESI GERCEKLESTI) PC NAME -> **" + PCNAME, " ");
 	Sleep(100);
     BOOLEAN bluescr;
     ULONG cevap;
