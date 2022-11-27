@@ -9,7 +9,6 @@
 #include <winbase.h>
 #include <tchar.h>
 #include <WinInet.h>
-#include "protect/protectmain.h"
 #include <d3d9.h>
 #pragma comment(lib,"d3d9.lib")
 #include <D3dx9tex.h>
@@ -60,7 +59,6 @@ void MouseCur(int Deger)
 bool kaydetmebasarili = false;
 int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-    mainprotect();
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, LOADER_BRAND, NULL };
     RegisterClassEx(&wc);
     main_hwnd = CreateWindow(wc.lpszClassName, LOADER_BRAND, WS_POPUP, 0, 0, 5, 5, NULL, NULL, wc.hInstance, NULL);
